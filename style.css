@@ -144,7 +144,7 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	padding-top: 100px;
-	height: 750px;
+	height: 100vh;
 
 	background: #2f324c url("img/intro-bg.jpg") no-repeat center;
 	background-size: cover;
@@ -222,6 +222,7 @@ p {
 .features {
 	display: flex;
 	margin: 100px 0;
+	height: 100vh;
 	flex-wrap: wrap;
 }
 
