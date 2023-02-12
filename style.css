@@ -57,9 +57,52 @@ p {
 	border-bottom: 1px solid #4f5168;
 }
 
+.header__logo__all{
+	width: 500px;
+	display: flex;
+	justify-content: start;
+}
+
+.header__logo__all:hover{
+	opacity: 1;
+}
+
 
 .header__logo {
-	width: 200;
+	width: 170px;
+	height: 70px;
+	background-color: red;
+	border-radius: 50px 0;
+
+	transition: border-radius .1s linear;
+}
+
+.header__logo:hover{
+	border-radius: 20px;
+}
+
+.logo__text{
+	text-align: center;
+	align-content: center;
+
+	font-family: 'Righteous';
+	font-size: 55px;
+	color: white;
+}
+
+.header__logo__text{
+	padding-left: 7px;
+
+	font-family: 'Righteous';
+	font-size: 55px;
+	color: white;
+	opacity: 0.5;
+
+	transition: color .2s linear;
+}
+
+.header__logo__text:hover{
+	opacity: 1;
 }
 
 
@@ -80,7 +123,7 @@ p {
 	text-decoration: none;
 	opacity: 0.75;
 
-	transition: background .1s linear;
+	transition: opacity .1s linear;
 }
 
 .nav__link:first-child {
