@@ -187,7 +187,8 @@ p {
   line-height: 1.5;
   font-weight: 400;
 }
-.intro .intro__inner .btn {
+
+.btn--red {
   display: inline-block;
   vertical-align: top;
   padding: 19px 50px;
@@ -201,12 +202,10 @@ p {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-}
-.intro .intro__inner .btn--red {
   background-color: #e84545;
   transition: background-color 0.2s linear;
 }
-.intro .intro__inner .btn--red:hover {
+.btn--red:hover {
   background-color: #e73131;
 }
 
@@ -292,23 +291,23 @@ p {
 .reviews {
   background-color: #53354a;
 }
-.reviews .reviews__items {
+.reviews .reviews__item {
   display: flex;
   flex-wrap: wrap;
 }
-.reviews .reviews__items .reviews__photo {
+.reviews .reviews__item .reviews__photo {
   width: 50%;
   height: 500px;
   position: relative;
 }
-.reviews .reviews__items .reviews__photo .reviews__img {
+.reviews .reviews__item .reviews__photo .reviews__img {
   position: absolute;
   top: 50%;
   right: 0;
   z-index: 1;
   transform: translateY(-50%);
 }
-.reviews .reviews__items .reviews__content {
+.reviews .reviews__item .reviews__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,15 +315,120 @@ p {
   color: #fff;
   padding-left: 80px;
 }
-.reviews .reviews__items .reviews__content .reviews__text {
+.reviews .reviews__item .reviews__content .reviews__text {
   font-family: "Cardo", sans-serif;
   font-style: italic;
   font-size: 36px;
   line-height: 1.2;
   margin-bottom: 25px;
 }
-.reviews .reviews__items .reviews__content .reviews__author {
+.reviews .reviews__item .reviews__content .reviews__author {
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.download {
+  margin: 90px 0;
+  text-align: center;
+}
+.download .download__item {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: #2d3033;
+  margin-bottom: 10px;
+}
+.download .download__text {
+  font-size: 13px;
+  color: #2d3033;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.btn--long {
+  min-width: 280px;
+}
+
+.footer {
+  background-color: #2d3033;
+}
+.footer .footer__inner {
+  padding: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .footer__inner .footer__block {
+  width: 33.33333%;
+  padding: 0 15px;
+  text-align: center;
+}
+.footer .footer__inner .footer__block .footer__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footer .footer__inner .footer__block .footer__address {
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .footer__inner .footer__block .footer__text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .copyright {
+  padding: 20px 0;
+  background-color: #313454;
+}
+.footer .copyright .copyright__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #808080;
+}
+.footer .copyright .copyright__text span {
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social .social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e8ecee;
+  transition: background 0.2s linear;
+  background: none;
+  border-width: 2px;
+  background-color: transparent;
+  background-repeat: 2px;
+}
+.social .social__item:hover {
+  background-color: #e8ecee;
+}
+.social .social__item .social__icon {
+  display: block;
+  height: 18px;
+  fill: #c6cacc;
+  transition: fill 0.1s linear;
+}
+.social .social__item .social__icon.twitter:hover {
+  fill: #1faee9;
+}
+.social .social__item .social__icon.facebook:hover {
+  fill: #3b5998;
+}
+.social .social__item .social__icon.linkedin:hover {
+  fill: #0e76a8;
 }/*# sourceMappingURL=style.css.map */
